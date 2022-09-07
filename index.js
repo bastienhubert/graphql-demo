@@ -38,7 +38,6 @@ const typeDefs = gql`
     moviesAsOtherVehicle: [Movie!]! @relationship(type: "HAS_OTHER_VEHICLE", direction: IN)
   }
 
-  # Custom query
   type Query {
     getTop3JamesBondVehicles: [Vehicle!]!
     @cypher(

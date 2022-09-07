@@ -27,6 +27,19 @@ query {
 }
 ```
 
+OR
+
+```
+query {
+  people (where: {name: "Sean Connery"}){
+    movies {
+      title
+    }
+  }
+}
+```
+
+
 - Get Sean Connery vehicles (uncomment line 25 to 31 in index.js to make it work)
 ```
 query {
